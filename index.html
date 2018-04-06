@@ -8,20 +8,48 @@
 </head>
 <body>
   <div class="hero">
-    <nav class="navbar">
-      <a class="navbar_logo" href="#">Zestar</a>
-      <ul class="navbar_menu">
-        <li class="navbar_menu--item">
-          <a href="https://zest.com.ng/academy" target="_blank">Zest Academy</a>
-        </li>
-        <li class="navbar_menu--item">
-          <a href="#">Login</a>
-        </li>
-        <li class="navbar_menu--item">
-          <a class="button" href="#">Sign Up</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="hero_container">
+      <nav class="navbar">
+        <a class="navbar_logo" href="#">Zestar</a>
+        <ul class="navbar_menu">
+          <li class="navbar_menu--item">
+            <a href="https://zest.com.ng/academy" target="_blank">Zest Academy</a>
+          </li>
+          <li class="navbar_menu--item">
+            <a href="#">Login</a>
+          </li>
+          <li class="navbar_menu--item">
+            <a class="button" href="#">Sign Up</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hero_section">
+        <div class="hero_row">
+          <div class="hero_column-8">
+            <h3>Hire Professional hands at a whim from your device</h3>
+            <div class="hero_row">
+              <div class="hero_column-5">
+                <label for="inputLocation">Select your location</label>
+                <select id="inputLocation" class="hero_select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="hero_column-5">
+                <label for="inputService">Select your service</label>
+                <select id="inputService" class="hero_select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="hero_column-2">
+                <button class="hero_button">Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
