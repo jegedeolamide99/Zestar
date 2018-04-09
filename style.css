@@ -188,8 +188,15 @@ main {
   background-color: #de7c1b;
   top: -3em;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.hero_button  {
+.hero_info_card svg {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.hero .hero_button  {
   border-radius: 4px;
   padding: .5rem 1.75rem;
   background: linear-gradient(90deg, #de7c1b 0%, #f68a1e 100%);
@@ -199,8 +206,14 @@ main {
   font-size: 1rem;
   box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.35);
   line-break: 23px;
+  transition: ease .5s;
 }
-header .hero_button {
+.hero .hero_button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #de7c1b;
+  transition: ease .5s;
+}
+.hero header .hero_button {
   border: 2px solid #fff;
 }
 /* Media Queries */
@@ -329,7 +342,7 @@ header .hero_button {
     flex: 0 0 33.3%;
     max-width: 33.3%;
   }
-  .col-4 svg {margin-top: -30px;}
+  .hero_section .col-4 svg {margin-top: -30px;}
   .hero_sidenav {display: none;}
   .menu-toggler {display: none;}
   #zestar.hero_column::before {
