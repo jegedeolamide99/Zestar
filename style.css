@@ -156,6 +156,7 @@ header {
   border: 1px solid rgba(34,36,38,.15);
   box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.35);
 }
+.hero_section .col-4 svg {margin-top: -30px;}
 main {
   position: relative;
   top: -3rem;
@@ -436,7 +437,6 @@ main {
     flex: 0 0 33.3%;
     max-width: 33.3%;
   }
-  .hero_section .col-4 svg {margin-top: -30px;}
   .hero_sidenav {display: none;}
   .menu-toggler {display: none;}
   #zestar.hero_column::before {
