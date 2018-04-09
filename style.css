@@ -56,7 +56,7 @@ header {
   -ms-flex-pack: justify;
   -webkit-box-pack: justify !important;
           justify-content: space-between !important;
-  padding: .9375rem 1rem;
+  padding: 1rem 0;
   letter-spacing: 1px;
 }
 .navbar-expand {
@@ -85,11 +85,14 @@ header {
   padding-top: .3125rem;
   padding-bottom: .3125rem;
   margin-right: 1rem;
-  font-size: .875rem;
+  font-size: 1.25rem;
   font-weight: 900;
   line-height: 22px;
   white-space: nowrap;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
+.hero_navbar_logo img {height: 60px;}
 .hero_navbar li:not(:last-child) {margin-right: 2rem;}
 .hero_navbar_menu-link {
   padding: .5rem 1rem;
