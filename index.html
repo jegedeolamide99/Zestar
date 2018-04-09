@@ -5,151 +5,187 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Zestar | Zest on steroids</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap-reboot.min.css">
 </head>
 <body>
   <div class="hero">
-    <div class="hero_container">
       <header>
-        <nav class="navbar">
-          <a class="navbar_logo" href="#">Zestar</a>
-          <ul class="navbar_menu">
-            <li class="navbar_menu--item">
-              <a href="https://zest.com.ng/academy" target="_blank">Zest Academy</a>
-            </li>
-            <li class="navbar_menu--item">
-              <a href="#">Login</a>
-            </li>
-            <li class="navbar_menu--item">
-              <a class="button" href="#">Sign Up</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main role="main">
-        <div class="hero_section">
-          <div class="hero_row">
-            <div class="hero_column-8">
-              <h3>Hire Professional hands at a whim from your device</h3>
-              <div class="hero_row">
-                <div class="hero_column-5">
-                  <label for="inputLocation">Select your location</label>
-                  <select id="inputLocation" class="hero_select">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                  </select>
-                </div>
-                <div class="hero_column-5">
-                  <label for="inputService">Select your service</label>
-                  <select id="inputService" class="hero_select">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                  </select>
-                </div>
-                <div class="hero_column-2">
-                  <button class="hero_button">Book Now</button>
+        <div class="hero_container">
+          <nav class="hero_navbar navbar-expand">
+            <a class="hero_navbar_logo" href="#">Zestar</a>
+            <ul class="hero_navbar_menu">
+              <li">
+                <a class="hero_navbar_menu-link" href="https://zest.com.ng/academy" target="_blank">Zest Academy</a>
+              </li>
+              <li">
+                <a class="hero_navbar_menu-link" href="#">Login</a>
+              </li>
+              <li">
+                <a class="hero_button" href="#">Sign Up</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="hero_section">
+            <div class="hero_row">
+              <div class="hero_column col-8">
+                <h3>Hire Professional hands at a whim from your device</h3>
+                <div class="hero_row">
+                  <div class="hero_column col-4">
+                    <select id="inputLocation" class="hero_select">
+                      <option selected>Select your location</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="hero_column col-4">
+                    <select id="inputService" class="hero_select">
+                      <option selected>Select your service</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="hero_column col-4">
+                    <button class="hero_button">Book Now</button>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="hero_column-4">
-              <svg version="1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                <style>
-                  .st0{fill:#fff}.st1{fill:#cccfdf}.st5{fill:#fbbb12}.st6{fill:#f68a1e}
-                </style>
-                <switch>
-                  <g id="Workspace3">
-                    <circle class="st0" cx="459" cy="189" r="39"/>
-                    <path class="st1" d="M459 230a41 41 0 1 1 0-82 41 41 0 0 1 0 82zm0-79a38 38 0 1 0 0 76 38 38 0 0 0 0-76z"/>
-                    <circle cx="459" cy="189" r="26" fill="#e0e3ee"/>
-                    <path class="st1" d="M459 216a27 27 0 1 1 0-55 27 27 0 0 1 0 55zm0-52a25 25 0 1 0 0 50 25 25 0 0 0 0-50z"/>
-                    <path class="st1" d="M459 191l-1 1-1-1v-19l1-1 1 1v19z"/>
-                    <path class="st1" d="M471 190l1 1-1 1h-13l-1-1 1-1h13z"/>
-                    <path class="st0" d="M122 427h-14l-2-52h18z"/>
-                    <path class="st1" d="M123 428h-16l-3-54h22l-3 54zm-14-3h12l2-49h-16l2 49z"/>
-                    <path class="st1" d="M106 377v21h17l1-21z"/>
-                    <path class="st0" d="M536 427h-14l-3-52h19z"/>
-                    <path class="st1" d="M537 428h-16l-3-54h22l-3 54zm-14-3h12l2-49h-16l2 49z"/>
-                    <path class="st1" d="M519 377l1 21h17l1-21z"/>
-                    <path class="st0" d="M31 365h581v20H31z"/>
-                    <path class="st1" d="M614 386H30v-23h584v23zm-582-2h579v-18H32v18z"/>
-                    <g>
-                      <path class="st0" d="M448 340c0 9-7 16-15 16H211c-8 0-16-7-16-16V208c0-8 8-15 16-15h222c8 0 15 7 15 15v132z"/>
-                      <path class="st1" d="M433 357H211c-9 0-17-7-17-17V208c0-9 8-17 17-17h222c9 0 17 8 17 17v132c0 10-8 17-17 17zM211 194c-8 0-14 6-14 14v132c0 8 6 15 14 15h222c8 0 14-7 14-15V208c0-8-6-14-14-14H211z"/>
-                    </g>
-                    <g>
-                      <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="232" y1="362" x2="412" y2="182">
-                        <stop offset="0" stop-color="#fbbb12"/>
-                        <stop offset="1" stop-color="#f68a1e"/>
-                      </linearGradient>
-                      <path fill="url(#SVGID_1_)" d="M206 208h231v129H206z"/>
-                      <path class="st1" d="M439 337H205V207h234v130zm-231-2h228V209H208v126z"/>
-                    </g>
-                    <g>
-                      <path class="st0" d="M481 360l-15 4H177l-15-4v-10h319z"/>
-                      <path class="st1" d="M466 365H177l-16-4v-12h321v12l-16 4zm-289-2h289l14-4v-7H163v7l14 4z"/>
-                      <path class="st1" d="M163 359l14 5h289l16-5z"/>
-                    </g>
-                    <path class="st1" d="M348 352l-1 2h-50l-1-2 1-2h50l1 2z"/>
-                    <g>
-                      <path class="st0" d="M507 312v37c0 9 7 16 16 16h44c9 0 16-7 16-16v-37-2h-75l-1 2z"/>
-                      <path class="st1" d="M568 366h-44c-10 0-17-8-17-17v-37-3h77v40c0 9-7 17-16 17zm-59-54v37c0 8 7 14 15 14h44c8 0 14-6 14-14v-37h-73z"/>
-                      <path d="M588 342a7 7 0 1 0-5-13v11l5 2z" fill="none"/>
-                      <path class="st0" d="M588 320l-5 1v8l5-2a7 7 0 1 1-5 13v8a15 15 0 0 0 20-14c0-8-7-14-15-14z"/>
-                      <path class="st1" d="M588 350l-5-1h-1v-11l2 1a6 6 0 1 0 0-9l-2 1v-11l1-1a16 16 0 0 1 21 15c0 9-7 16-16 16zm-4-3l4 1a13 13 0 1 0-4-27v6a9 9 0 1 1 0 15v5z"/>
+              <div class="hero_column col-4">
+                <svg version="1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <style>
+                    .st0{fill:#fff}.st1{fill:#cccfdf}.st5{fill:#fbbb12}.st6{fill:#f68a1e}
+                  </style>
+                  <switch>
+                    <g id="Workspace3">
+                      <circle class="st0" cx="459" cy="189" r="39"/>
+                      <path class="st1" d="M459 230a41 41 0 1 1 0-82 41 41 0 0 1 0 82zm0-79a38 38 0 1 0 0 76 38 38 0 0 0 0-76z"/>
+                      <circle cx="459" cy="189" r="26" fill="#e0e3ee"/>
+                      <path class="st1" d="M459 216a27 27 0 1 1 0-55 27 27 0 0 1 0 55zm0-52a25 25 0 1 0 0 50 25 25 0 0 0 0-50z"/>
+                      <path class="st1" d="M459 191l-1 1-1-1v-19l1-1 1 1v19z"/>
+                      <path class="st1" d="M471 190l1 1-1 1h-13l-1-1 1-1h13z"/>
+                      <path class="st0" d="M122 427h-14l-2-52h18z"/>
+                      <path class="st1" d="M123 428h-16l-3-54h22l-3 54zm-14-3h12l2-49h-16l2 49z"/>
+                      <path class="st1" d="M106 377v21h17l1-21z"/>
+                      <path class="st0" d="M536 427h-14l-3-52h19z"/>
+                      <path class="st1" d="M537 428h-16l-3-54h22l-3 54zm-14-3h12l2-49h-16l2 49z"/>
+                      <path class="st1" d="M519 377l1 21h17l1-21z"/>
+                      <path class="st0" d="M31 365h581v20H31z"/>
+                      <path class="st1" d="M614 386H30v-23h584v23zm-582-2h579v-18H32v18z"/>
                       <g>
-                        <path class="st5" d="M531 311l-3-40c0-2-2-3-4-3-3 0-4 2-4 4l3 39h8zM564 310l3-38c0-2-1-4-4-4-2 0-4 1-4 3l-3 39h8z"/>
-                        <path class="st6" d="M541 311l1-37c0-2-2-4-4-4-3 0-4 2-4 4l-1 37h8z"/>
-                        <path class="st5" d="M537 311l3-22c0-2-2-4-4-4s-4 1-4 3l-3 23h8zM550 310l4-33c0-2-2-4-4-4s-4 1-4 3l-4 35 8-1z"/>
-                        <path class="st6" d="M558 310v-23c0-2-1-3-4-3-2 0-4 1-4 4l1 22h7z"/>
-                        <path class="st1" d="M522 312l-3-40 1-3 4-2c2 0 5 2 5 4l3 41h-10zm2-43l-2 1-1 2 3 37h5l-2-38-3-2zM565 312h-10l3-41c0-2 3-4 5-4l4 2 1 3-3 40zm-7-3h5l3-37-1-2-2-1-3 2-2 38zM532 312v-38c1-3 3-5 6-5l3 1 2 4-1 38h-10zm6-41c-2 0-3 1-3 3l-1 35h6v-35-2l-2-1z"/>
-                        <path class="st1" d="M540 312l5-36c0-3 3-4 5-4l4 2 1 3-4 35h-11zm10-38c-2 0-3 1-3 2l-4 33h6l4-32-1-2a3 3 0 0 0-2-1z"/>
-                        <path class="st6" d="M558 310v-23c0-2-1-3-4-3-2 0-4 1-4 4l1 22h7z"/>
-                        <path class="st1" d="M549 312v-24l2-4 3-1c3 0 5 2 5 4l1 25h-11zm5-27l-2 1v23h5v-22c0-1-1-2-3-2z"/>
-                        <path class="st6" d="M518 311h8l-9-32c-1-1-3-3-5-2s-4 3-3 5l9 29z"/>
-                        <path class="st1" d="M518 312l-9-30v-4a5 5 0 0 1 5-2c2 0 4 1 5 3l9 33h-10zm-4-34a3 3 0 0 0-3 1v2l8 28h6l-9-29-2-2z"/>
-                        <path d="M537 311l3-22c0-2-2-4-4-4s-4 1-4 3l-3 23h8z" fill="#f6a81e"/>
-                        <path class="st1" d="M528 312l3-24c0-2 2-4 5-4l4 2 1 3-3 23h-10zm8-26c-2 0-3 1-3 2l-3 21h6l2-20v-2a3 3 0 0 0-2-1z"/>
-                        <path d="M571 311l8-29c1-2 0-4-2-5s-4 1-5 2l-9 31 8 1z" fill="#ff9000"/>
-                        <path class="st1" d="M572 312h-11l10-33c0-2 2-3 5-3a5 5 0 0 1 4 2l1 4-9 30zm-8-3h6l8-28v-2l-2-1c-2 0-3 1-3 2l-9 29z"/>
+                        <path class="st0" d="M448 340c0 9-7 16-15 16H211c-8 0-16-7-16-16V208c0-8 8-15 16-15h222c8 0 15 7 15 15v132z"/>
+                        <path class="st1" d="M433 357H211c-9 0-17-7-17-17V208c0-9 8-17 17-17h222c9 0 17 8 17 17v132c0 10-8 17-17 17zM211 194c-8 0-14 6-14 14v132c0 8 6 15 14 15h222c8 0 14-7 14-15V208c0-8-6-14-14-14H211z"/>
+                      </g>
+                      <g>
+                        <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="232" y1="362" x2="412" y2="182">
+                          <stop offset="0" stop-color="#fbbb12"/>
+                          <stop offset="1" stop-color="#f68a1e"/>
+                        </linearGradient>
+                        <path fill="url(#SVGID_1_)" d="M206 208h231v129H206z"/>
+                        <path class="st1" d="M439 337H205V207h234v130zm-231-2h228V209H208v126z"/>
+                      </g>
+                      <g>
+                        <path class="st0" d="M481 360l-15 4H177l-15-4v-10h319z"/>
+                        <path class="st1" d="M466 365H177l-16-4v-12h321v12l-16 4zm-289-2h289l14-4v-7H163v7l14 4z"/>
+                        <path class="st1" d="M163 359l14 5h289l16-5z"/>
+                      </g>
+                      <path class="st1" d="M348 352l-1 2h-50l-1-2 1-2h50l1 2z"/>
+                      <g>
+                        <path class="st0" d="M507 312v37c0 9 7 16 16 16h44c9 0 16-7 16-16v-37-2h-75l-1 2z"/>
+                        <path class="st1" d="M568 366h-44c-10 0-17-8-17-17v-37-3h77v40c0 9-7 17-16 17zm-59-54v37c0 8 7 14 15 14h44c8 0 14-6 14-14v-37h-73z"/>
+                        <path d="M588 342a7 7 0 1 0-5-13v11l5 2z" fill="none"/>
+                        <path class="st0" d="M588 320l-5 1v8l5-2a7 7 0 1 1-5 13v8a15 15 0 0 0 20-14c0-8-7-14-15-14z"/>
+                        <path class="st1" d="M588 350l-5-1h-1v-11l2 1a6 6 0 1 0 0-9l-2 1v-11l1-1a16 16 0 0 1 21 15c0 9-7 16-16 16zm-4-3l4 1a13 13 0 1 0-4-27v6a9 9 0 1 1 0 15v5z"/>
+                        <g>
+                          <path class="st5" d="M531 311l-3-40c0-2-2-3-4-3-3 0-4 2-4 4l3 39h8zM564 310l3-38c0-2-1-4-4-4-2 0-4 1-4 3l-3 39h8z"/>
+                          <path class="st6" d="M541 311l1-37c0-2-2-4-4-4-3 0-4 2-4 4l-1 37h8z"/>
+                          <path class="st5" d="M537 311l3-22c0-2-2-4-4-4s-4 1-4 3l-3 23h8zM550 310l4-33c0-2-2-4-4-4s-4 1-4 3l-4 35 8-1z"/>
+                          <path class="st6" d="M558 310v-23c0-2-1-3-4-3-2 0-4 1-4 4l1 22h7z"/>
+                          <path class="st1" d="M522 312l-3-40 1-3 4-2c2 0 5 2 5 4l3 41h-10zm2-43l-2 1-1 2 3 37h5l-2-38-3-2zM565 312h-10l3-41c0-2 3-4 5-4l4 2 1 3-3 40zm-7-3h5l3-37-1-2-2-1-3 2-2 38zM532 312v-38c1-3 3-5 6-5l3 1 2 4-1 38h-10zm6-41c-2 0-3 1-3 3l-1 35h6v-35-2l-2-1z"/>
+                          <path class="st1" d="M540 312l5-36c0-3 3-4 5-4l4 2 1 3-4 35h-11zm10-38c-2 0-3 1-3 2l-4 33h6l4-32-1-2a3 3 0 0 0-2-1z"/>
+                          <path class="st6" d="M558 310v-23c0-2-1-3-4-3-2 0-4 1-4 4l1 22h7z"/>
+                          <path class="st1" d="M549 312v-24l2-4 3-1c3 0 5 2 5 4l1 25h-11zm5-27l-2 1v23h5v-22c0-1-1-2-3-2z"/>
+                          <path class="st6" d="M518 311h8l-9-32c-1-1-3-3-5-2s-4 3-3 5l9 29z"/>
+                          <path class="st1" d="M518 312l-9-30v-4a5 5 0 0 1 5-2c2 0 4 1 5 3l9 33h-10zm-4-34a3 3 0 0 0-3 1v2l8 28h6l-9-29-2-2z"/>
+                          <path d="M537 311l3-22c0-2-2-4-4-4s-4 1-4 3l-3 23h8z" fill="#f6a81e"/>
+                          <path class="st1" d="M528 312l3-24c0-2 2-4 5-4l4 2 1 3-3 23h-10zm8-26c-2 0-3 1-3 2l-3 21h6l2-20v-2a3 3 0 0 0-2-1z"/>
+                          <path d="M571 311l8-29c1-2 0-4-2-5s-4 1-5 2l-9 31 8 1z" fill="#ff9000"/>
+                          <path class="st1" d="M572 312h-11l10-33c0-2 2-3 5-3a5 5 0 0 1 4 2l1 4-9 30zm-8-3h6l8-28v-2l-2-1c-2 0-3 1-3 2l-9 29z"/>
+                        </g>
+                      </g>
+                      <g>
+                        <path class="st0" d="M227 348c0 4-4 8-9 8h-32c-5 0-9-4-9-8v-84c0-4 4-8 9-8h32c5 0 9 4 9 8v84z"/>
+                        <path class="st1" d="M218 357h-32c-5 0-10-4-10-9v-84c0-5 5-9 10-9h32c5 0 10 4 10 9v84c0 5-5 9-10 9zm-32-100c-4 0-8 3-8 7v84c0 4 4 7 8 7h32c4 0 8-3 8-7v-84c0-4-4-7-8-7h-32z"/>
+                        <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="170" y1="338" x2="234" y2="274">
+                          <stop offset="0" stop-color="#fbbb12"/>
+                          <stop offset="1" stop-color="#f68a1e"/>
+                        </linearGradient>
+                        <path d="M222 347c0 3-2 5-6 5h-28c-4 0-6-2-6-5v-82c0-3 2-5 6-5h28c4 0 6 2 6 5v82z" fill="url(#SVGID_2_)"/>
+                        <path class="st0" d="M213 260c0 2-1 3-2 3h-18c-1 0-2-1-2-3l2-2h18l2 2zM232 357c0-8-7-14-14-14h-32a14 14 0 0 0-12 21h56l2-7z"/>
+                        <path class="st1" d="M231 365h-58v-1a15 15 0 0 1 13-23h32a15 15 0 0 1 13 23v1zm-57-2h55a13 13 0 0 0-11-19h-32a13 13 0 0 0-12 19z"/>
+                      </g>
+                      <g>
+                        <path class="st6" d="M75 283h9v77h-9z"/>
+                        <path class="st1" d="M85 360H73v-79h12v79zm-9-2h7v-74h-7v74z"/>
+                      </g>
+                      <g>
+                        <path class="st6" d="M122 359c0 2-1 4-4 4H57c-2 0-4-2-4-4s2-4 4-4h61c3 0 4 2 4 4z"/>
+                        <path class="st1" d="M118 364H57a5 5 0 0 1 0-10h61a5 5 0 0 1 0 10zm-61-8a3 3 0 0 0 0 6h61a3 3 0 0 0 0-6H57z"/>
+                      </g>
+                      <g>
+                        <path transform="rotate(-57 188 140)" class="st1" d="M168 138h39v4h-39z"/>
+                      </g>
+                      <g>
+                        <path transform="rotate(-58 123 240)" class="st6" d="M21 234h205v11H21z"/>
+                        <path class="st1" d="M73 331l-11-7 112-175 11 7L73 331zm-7-8l7 4 108-170-7-5L66 323z"/>
+                      </g>
+                      <g>
+                        <path class="st6" d="M282 128c0 4-3 7-7 7h-76c-4 0-7-3-7-7s3-8 7-8h76c4 0 7 4 7 8z"/>
+                        <path class="st1" d="M275 136h-76a8 8 0 0 1 0-17h76a8 8 0 0 1 0 17zm-76-14a6 6 0 0 0 0 12h76a6 6 0 0 0 0-12h-76z"/>
                       </g>
                     </g>
-                    <g>
-                      <path class="st0" d="M227 348c0 4-4 8-9 8h-32c-5 0-9-4-9-8v-84c0-4 4-8 9-8h32c5 0 9 4 9 8v84z"/>
-                      <path class="st1" d="M218 357h-32c-5 0-10-4-10-9v-84c0-5 5-9 10-9h32c5 0 10 4 10 9v84c0 5-5 9-10 9zm-32-100c-4 0-8 3-8 7v84c0 4 4 7 8 7h32c4 0 8-3 8-7v-84c0-4-4-7-8-7h-32z"/>
-                      <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="170" y1="338" x2="234" y2="274">
-                        <stop offset="0" stop-color="#fbbb12"/>
-                        <stop offset="1" stop-color="#f68a1e"/>
-                      </linearGradient>
-                      <path d="M222 347c0 3-2 5-6 5h-28c-4 0-6-2-6-5v-82c0-3 2-5 6-5h28c4 0 6 2 6 5v82z" fill="url(#SVGID_2_)"/>
-                      <path class="st0" d="M213 260c0 2-1 3-2 3h-18c-1 0-2-1-2-3l2-2h18l2 2zM232 357c0-8-7-14-14-14h-32a14 14 0 0 0-12 21h56l2-7z"/>
-                      <path class="st1" d="M231 365h-58v-1a15 15 0 0 1 13-23h32a15 15 0 0 1 13 23v1zm-57-2h55a13 13 0 0 0-11-19h-32a13 13 0 0 0-12 19z"/>
-                    </g>
-                    <g>
-                      <path class="st6" d="M75 283h9v77h-9z"/>
-                      <path class="st1" d="M85 360H73v-79h12v79zm-9-2h7v-74h-7v74z"/>
-                    </g>
-                    <g>
-                      <path class="st6" d="M122 359c0 2-1 4-4 4H57c-2 0-4-2-4-4s2-4 4-4h61c3 0 4 2 4 4z"/>
-                      <path class="st1" d="M118 364H57a5 5 0 0 1 0-10h61a5 5 0 0 1 0 10zm-61-8a3 3 0 0 0 0 6h61a3 3 0 0 0 0-6H57z"/>
-                    </g>
-                    <g>
-                      <path transform="rotate(-57 188 140)" class="st1" d="M168 138h39v4h-39z"/>
-                    </g>
-                    <g>
-                      <path transform="rotate(-58 123 240)" class="st6" d="M21 234h205v11H21z"/>
-                      <path class="st1" d="M73 331l-11-7 112-175 11 7L73 331zm-7-8l7 4 108-170-7-5L66 323z"/>
-                    </g>
-                    <g>
-                      <path class="st6" d="M282 128c0 4-3 7-7 7h-76c-4 0-7-3-7-7s3-8 7-8h76c4 0 7 4 7 8z"/>
-                      <path class="st1" d="M275 136h-76a8 8 0 0 1 0-17h76a8 8 0 0 1 0 17zm-76-14a6 6 0 0 0 0 12h76a6 6 0 0 0 0-12h-76z"/>
-                    </g>
-                  </g>
-                </switch>
-              </svg>
+                  </switch>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
+      </header>
+      <main role="main">
+        <div class="hero_container">
+            <div class="hero_info">
+              <div class="hero_row">
+                <div class="hero_column col-4">
+                  <div class="hero_info_card">
+                    <span class="icon">
+                      <i class="fa fa-money"></i>
+                    </span>
+                    <h3>Invest</h3>
+                    <p>Commit money to the training of people thus elevating the service quality in Nigeria and bettering the lives of fellow Nigerians.</p>
+                    <button class="hero_button">Learn More</button>
+                  </div>
+                </div>
+                <div class="hero_column col-4" id="zestar">
+                  <div class="hero_info_card">
+                    <span class="icon">
+                      <i class="fa fa-money"></i>
+                    </span>
+                    <h3>Zestars</h3>
+                    <p>Each Zestar has been carefully selected, trained and certified to treat your property exceptionally and deliver on time.</p>
+                    <button class="hero_button">Learn More</button>
+                  </div>
+                </div>
+                <div class="hero_column col-4">
+                  <div class="hero_info_card">
+                    <span class="icon">
+                      <i class="fa fa-money"></i>
+                    </span>
+                    <h3>Academy</h3>
+                    <p>We recruit from a pool of talent and then immerse our Zestars in a month-long training covering both technical and soft skills.</p>
+                    <button class="hero_button">Learn More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
       </main>
-    </div>
   </div>
 </body>
 </html>
