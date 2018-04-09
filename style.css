@@ -14,6 +14,28 @@ header {
   background-size: cover;
   background-position: center;
 }
+.hero a {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    position: relative;
+    text-decoration: none;
+}
+.hero a:before, .hero a:after{
+    content: '';
+    position: absolute;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    -o-transition: transform .5s ease;
+    transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
+  }
+.hero a:hover {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
 .hero_container {
   margin-right: auto;
   margin-left: auto;
@@ -68,19 +90,27 @@ header {
   line-height: 22px;
   white-space: nowrap;
 }
-
-.hero_navbar a {
-  color: #fff;
-}
-.hero_navbar a:hover {
-  color: #fff;
-  text-decoration: none;
-}
+.hero_navbar li:not(:last-child) {margin-right: 2rem;}
 .hero_navbar_menu-link {
   padding: .5rem 1rem;
   font-size: 1.125rem;
   font-weight: 700;
   text-transform: capitalize;
+}
+.hero_navbar_menu-link::before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+}
+.hero_navbar_menu-link:hover::before {
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
 }
 .hero_section {
   display: flex;
@@ -144,24 +174,6 @@ main {
   box-shadow: 0px 4px 30px 0 rgba(0, 0, 0, 0.35);
   z-index: 10;
 }
-#zestar.hero_column::before {
-  position: absolute;
-  top: -50px;
-  content: "";
-  background: #fff;
-  height: 50px;
-  width: 100%;
-  left: 0;
-}
-#zestar.hero_column::after {
-  position: absolute;
-  bottom: -30px;
-  content: "";
-  background: #fff;
-  height: 30px;
-  width: 100%;
-  left: 0;
-}
 #zestar.hero_column .hero_info_card {
   position: relative;
   top: -3rem;
@@ -191,6 +203,109 @@ main {
 header .hero_button {
   border: 2px solid #fff;
 }
+/* Media Queries */
+@media screen and (max-width:575px) {
+  .hero_sidenav {padding: 3rem 0rem !important;}
+  .hero_sidenav a {font-size: 1rem;}
+}
+@media screen and (max-width:991px) {
+  .hero_info .hero_column {margin-bottom: 90px;}
+  .hero_column {margin-bottom: 30px;}
+  .hero_select {width: 100%;}
+  .hero_section .hero_button {width: 100%;}
+  .hero_navbar_menu {display: none;}
+  .hero_sidenav {
+      height: 90%;
+      width: 0;
+      position: fixed;
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      background-color: #fbbb12;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1000 1000'%3E%3Cg fill='%23faaf15'%3E%3Cpolygon points='1000%2C-50 0%2C-50 500%2C450'/%3E%3Cpolygon points='550%2C500 1050%2C1000 1050%2C0'/%3E%3Cpolygon points='-50%2C0 -50%2C1000 450%2C500'/%3E%3Cpolygon points='0%2C1050 1000%2C1050 500%2C550'/%3E%3C/g%3E%3Cg fill='%23f9a318'%3E%3Cpolygon points='1000%2C-133.3 0%2C-133.3 500%2C366.7'/%3E%3Cpolygon points='633.3%2C500 1133.3%2C1000 1133.3%2C0'/%3E%3Cpolygon points='-133.3%2C0 -133.3%2C1000 366.7%2C500'/%3E%3Cpolygon points='0%2C1133.3 1000%2C1133.3 500%2C633.3'/%3E%3C/g%3E%3Cg fill='%23f7961b'%3E%3Cpolygon points='1000%2C-216.7 0%2C-216.7 500%2C283.3'/%3E%3Cpolygon points='716.7%2C500 1216.7%2C1000 1216.7%2C0'/%3E%3Cpolygon points='-216.7%2C0 -216.7%2C1000 283.3%2C500'/%3E%3Cpolygon points='0%2C1216.7 1000%2C1216.7 500%2C716.7'/%3E%3C/g%3E%3Cg fill='%23f68a1e'%3E%3Cpolygon points='1000%2C-300 0%2C-300 500%2C200'/%3E%3Cpolygon points='800%2C500 1300%2C1000 1300%2C0'/%3E%3Cpolygon points='-300%2C0 -300%2C1000 200%2C500'/%3E%3Cpolygon points='0%2C1300 1000%2C1300 500%2C800'/%3E%3C/g%3E%3Cg fill-opacity='0'%3E%3Cpolygon fill='%23df9210' points='0%2C707.1 0%2C292.9 292.9%2C0 707.1%2C0 1000%2C292.9 1000%2C707.1 707.1%2C1000 292.9%2C1000'/%3E%3Cg fill='%23e59014'%3E%3Cpolygon points='464.6%2C-242.5 -242.5%2C464.6 464.6%2C464.6'/%3E%3Cpolygon points='535.4%2C464.6 1242.5%2C464.6 535.4%2C-242.5'/%3E%3Cpolygon points='-242.5%2C535.4 464.6%2C1242.5 464.6%2C535.4'/%3E%3Cpolygon points='535.4%2C1242.5 1242.5%2C535.4 535.4%2C535.4'/%3E%3C/g%3E%3Cg fill='%23eb8e17'%3E%3Cpolygon points='405.7%2C-301.4 -301.4%2C405.7 405.7%2C405.7'/%3E%3Cpolygon points='594.3%2C405.7 1301.4%2C405.7 594.3%2C-301.4'/%3E%3Cpolygon points='-301.4%2C594.3 405.7%2C1301.4 405.7%2C594.3'/%3E%3Cpolygon points='594.3%2C1301.4 1301.4%2C594.3 594.3%2C594.3'/%3E%3C/g%3E%3Cg fill='%23f08c1b'%3E%3Cpolygon points='346.8%2C-360.3 -360.3%2C346.8 346.8%2C346.8'/%3E%3Cpolygon points='653.2%2C346.8 1360.3%2C346.8 653.2%2C-360.3'/%3E%3Cpolygon points='-360.3%2C653.2 346.8%2C1360.3 346.8%2C653.2'/%3E%3Cpolygon points='653.2%2C1360.3 1360.3%2C653.2 653.2%2C653.2'/%3E%3C/g%3E%3Cg fill='%23f68a1e'%3E%3Cpolygon points='287.9%2C-419.2 -419.2%2C287.9 287.9%2C287.9'/%3E%3Cpolygon points='712.1%2C287.9 1419.2%2C287.9 712.1%2C-419.2'/%3E%3Cpolygon points='-419.2%2C712.1 287.9%2C1419.2 287.9%2C712.1'/%3E%3Cpolygon points='712.1%2C1419.2 1419.2%2C712.1 712.1%2C712.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      overflow-x: hidden;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s;
+      padding: 5rem 0rem;
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  }
+  .hero_navbar_menu-link::before, .hero_navbar_menu-link::after {
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #fff;
+  }
+  .hero_navbar_menu-link::before {
+      bottom: 0;
+      -webkit-transform: translateX(-100%);
+          -ms-transform: translateX(-100%);
+              transform: translateX(-100%);
+  }
+  .hero_navbar_menu-link::after {
+      top: 0;
+      -webkit-transform: translateX(100%);
+          -ms-transform: translateX(100%);
+              transform: translateX(100%);
+  }
+  .hero_navbar_menu-link:hover::before, .hero_navbar_menu-link:hover::after {
+      -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+              transform: translateX(0);
+  }
+  .hero_sidenav a {
+      padding: 1rem .5rem 1rem;
+      color: #fff;
+      display: block;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      font-weight: 900;
+  }
+  .hero_sidenav a:hover:not(:first-child) {
+      background: rgba(255, 255, 255, 0.2);
+      -webkit-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+  }
+  .hero_sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    font-size: 2rem;
+  }
+  .menu-toggler {
+      display: inline-block;
+      padding-top: .3125rem;
+      padding-bottom: .3125rem;
+      margin-right: 1rem;
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 22px;
+      white-space: nowrap;
+      cursor: pointer;
+      text-transform: uppercase;
+      color: #fff;
+  }
+  .sr-only {position: absolute;
+      clip:rect(1px 1px 1px 1px);
+  }
+
 }
 @media screen and (min-width:576px) {
     .hero_container {
@@ -215,15 +330,29 @@ header .hero_button {
     max-width: 33.3%;
   }
   .col-4 svg {margin-top: -30px;}
+  .hero_sidenav {display: none;}
+  .menu-toggler {display: none;}
+  #zestar.hero_column::before {
+    position: absolute;
+    top: -50px;
+    content: "";
+    background: #fff;
+    height: 50px;
+    width: 100%;
+    left: 0;
+  }
+  #zestar.hero_column::after {
+    position: absolute;
+    bottom: -30px;
+    content: "";
+    background: #fff;
+    height: 30px;
+    width: 100%;
+    left: 0;
+  }
 }
 @media screen and (min-width:1200px) {
   .hero_container {
       max-width: 1140px;
   }
-}
-@media screen and (max-width:991px) {
-  .hero_info .hero_column {margin-bottom: 90px;}
-  .hero_column {margin-bottom: 30px;}
-  .hero_select {width: 100%;}
-  .hero_section .hero_button {width: 100%;}
 }
