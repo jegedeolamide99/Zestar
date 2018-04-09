@@ -115,11 +115,6 @@ header {
         -ms-transform: scaleX(1);
             transform: scaleX(1);
 }
-.hero_section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .hero_section h3 {
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
