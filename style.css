@@ -216,6 +216,97 @@ main {
 .hero header .hero_button {
   border: 2px solid #fff;
 }
+/* Animaions */
+@-webkit-keyframes "fadeInUp" {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		        transform: translate3d(0, 100%, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		        transform: none;
+	}
+}
+@keyframes "fadeInUp" {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		        transform: translate3d(0, 100%, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		        transform: none;
+	}
+}
+
+.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
+          animation-duration: 2s;
+}
+@-webkit-keyframes "fadeInLeft" {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		        transform: translate3d(-100%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		        transform: none;
+	}
+}
+@keyframes "fadeInLeft" {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		        transform: translate3d(-100%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		        transform: none;
+	}
+}
+
+.fadeInLeft {
+	-webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+          animation-duration: 2s;
+}
+@-webkit-keyframes "fadeInRight" {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(100%, 0, 0);
+		        transform: translate3d(100%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		        transform: none;
+	}
+}
+@keyframes "fadeInRight" {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(100%, 0, 0);
+		        transform: translate3d(100%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		        transform: none;
+	}
+}
+
+.fadeInRight {
+	-webkit-animation-name: fadeInRight;
+          animation-name: fadeInRight;
+          animation-duration: 2s;
+}
 /* Media Queries */
 @media screen and (max-width:575px) {
   .hero_sidenav {padding: 3rem 0rem !important;}
